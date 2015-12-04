@@ -15,7 +15,7 @@ INDENT = /usr/bin/indent
 
 CC        = clang
 LDFLAGS   = -O
-CFLAGS    = -Weverything -Wextra -pedantic $(LDFLAGS)
+CFLAGS    = -Weverything -Wextra -pedantic -lm $(LDFLAGS)
 
 .SUFFIXES:
 .SUFFIXES:  .c .o .h
@@ -36,3 +36,4 @@ clean :
 
 veryclean : clean
 	rm  -f $(target)
+
